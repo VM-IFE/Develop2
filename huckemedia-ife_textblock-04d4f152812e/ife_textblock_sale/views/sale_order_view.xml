@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_order_form_view" model="ir.ui.view">
+        <field name="name">sale.order.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Pre-Lines Text-blocks -->
+
+            <xpath expr="//field[@name='order_line']" position="before">
+                <separator string="Pre-Lines Textblocks"/>
+                <field name="model_id" invisible="1"/>
+                <field name="above_text_block_item"
+                       context="{'default_model_id': model_id, 'default_model': 'sale.order', 'partner_id': partner_id}"
+                       widget="many2many_list">
+                    <tree>
+                        <field name="sequence" widget="handle"/>
+                        <field name="name" string="Textblock"/>
+                        <field name="page_break" optional="hidden"/>
+                        <field name="not_print" optional="hidden"/>
+                        <field name="not_print_custom_view" optional="hidden" readonly="False"/>
+                    </tree>
+                </field>
+            </xpath>
+
+            <!--Post-Lines Text-blocks-->
+
+            <xpath expr="//field[@name='order_line']" position="after">
+                <separator string="Post-Lines Textblocks"/>
+                <field name="model_id" invisible="1"/>
+                 <field name="bottom_text_block_item"
+                        context="{'default_model_id': model_id, 'default_model': 'sale.order', 'partner_id': partner_id}"
+                        widget="many2many_list">
+                    <tree>
+                        <field name="sequence" widget="handle"/>
+                        <field name="name" string="Textblock"/>
+                        <field name="page_break" optional="hidden"/>
+                        <field name="not_print" optional="hidden"/>
+                        <field name="not_print_custom_view" optional="hidden" readonly="False"/>
+                    </tree>
+                </field>
+            </xpath>
+
+            <!--Lines Tex-blocks -->
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="before">
+                <field name="image_1024" widget="image" invisible="True"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='name']" position="before">
+                <field name="model" invisible="1"/>
+                <field name="is_textblock" invisible="1"/>
+                <field name="model_id" invisible="1"/>
+                <field name="order_partner_id" invisible="1"/>
+                <field optional="show"
+                       name="text_block_item"
+                       context="{'default_model_id': model_id, 'default_model': 'sale.order.line',
+                       'default_sale_line_id' : id, 'partner_id': order_partner_id}"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/form/group[1]/group[2]" position="inside">
+                <field name="model" invisible="1"/>
+                <field name="is_textblock" invisible="1"/>
+                <field name="model_id" invisible="1"/>
+                <field name="order_partner_id" invisible="1"/>
+                <field name="text_block_item"
+                       context="{'default_model_id': model_id, 'default_model': 'sale.order.line',
+                       'default_sale_line_id' : id, 'partner_id': order_partner_id}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

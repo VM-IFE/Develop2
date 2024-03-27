@@ -1,0 +1,123 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ife_textblock_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-15 18:07+0000\n"
+"PO-Revision-Date: 2021-10-15 18:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ife_textblock_invoice
+#: model_terms:ir.ui.view,arch_db:ife_textblock_invoice.report_invoice_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Zwischensumme</strong>"
+
+#. module: ife_textblock_invoice
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move_line__t_body
+msgid "Contents"
+msgstr "Inhalte"
+
+#. module: ife_textblock_invoice
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move__customer_reference
+msgid "Customer Reference"
+msgstr "Kundenreferenz"
+
+#. module: ife_textblock_invoice
+#: model:ir.model,name:ife_textblock_invoice.model_account_move
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_text_block_item__move_id
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_text_block_item__move_pr_id
+msgid "Invoice"
+msgstr "Rechnung"
+
+#. module: ife_textblock_invoice
+#: model:ir.model,name:ife_textblock_invoice.model_text_block_item
+msgid "Item Textblock"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model:ir.model,name:ife_textblock_invoice.model_account_move
+msgid "Journal Entries"
+msgstr "Buchungssätze"
+
+#. module: ife_textblock_invoice
+#: model:ir.model,name:ife_textblock_invoice.model_account_move_line
+msgid "Journal Item"
+msgstr "Buchungszeile"
+
+#. module: ife_textblock_invoice
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move__model
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move__model_id
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move_line__model
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move_line__model_id
+msgid "Model"
+msgstr "Modell"
+
+#. module: ife_textblock_invoice
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_text_block__account_move_line_id
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_text_block_item__account_move_line_id
+msgid "Move Line"
+msgstr "Buchungszeile"
+
+#. module: ife_textblock_invoice
+#: model_terms:ir.ui.view,arch_db:ife_textblock_invoice.account_move_form_extended
+msgid "Post-Lines Textblocks"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model_terms:ir.ui.view,arch_db:ife_textblock_invoice.account_move_form_extended
+msgid "Pre-Lines Textblocks"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move_line__sequence
+msgid "Sequence"
+msgstr "Sequenz"
+
+#. module: ife_textblock_invoice
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move__above_text_block
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move__above_text_block_item
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move__bottom_text_block
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move__bottom_text_block_item
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move_line__text_block
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move_line__text_block_item
+#: model:ir.ui.menu,name:ife_textblock_invoice.text_block_move_menu
+msgid "Text Block"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model:ir.actions.act_window,name:ife_textblock_invoice.text_block_move_action
+msgid "Text Block Action"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model:ir.ui.menu,name:ife_textblock_invoice.text_block_item_move_menu
+msgid "Text Block Item"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model:ir.actions.act_window,name:ife_textblock_invoice.text_block_item_move_action
+msgid "Text Block Item Action"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model_terms:ir.ui.view,arch_db:ife_textblock_invoice.account_move_form_extended
+msgid "Textblock"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model:ir.model.fields,field_description:ife_textblock_invoice.field_account_move_line__is_textblock
+msgid "is TextBlock"
+msgstr ""
+
+#. module: ife_textblock_invoice
+#: model:ir.model,name:ife_textblock_invoice.model_text_block
+msgid "text.block"
+msgstr ""

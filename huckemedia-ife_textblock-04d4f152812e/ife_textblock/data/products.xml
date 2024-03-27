@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="product_text_block" model="product.product">
+            <field name="name">TextBlock</field>
+            <field name="default_code">TxtBlck</field>
+            <field name="type">service</field>
+            <field name="is_textblock">true</field>
+            <field name="lst_price">0.0</field>
+        </record>
+    </data>
+</odoo>

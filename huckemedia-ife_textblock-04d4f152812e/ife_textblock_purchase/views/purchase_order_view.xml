@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="purchase_order_form_view" model="ir.ui.view">
+        <field name="name">purchase.order.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Pre-Lines Text-blocks -->
+            <xpath expr="//field[@name='order_line']" position="before">
+                <separator string="Pre-Lines Textblocks"/>
+                <field name="model_id" invisible="1"/>
+                <field name="above_text_block_item"
+                       context="{'default_model': 'purchase.order', 'partner_id': partner_id}"
+                       widget="many2many_list">
+                    <tree>
+                        <field name="sequence" widget="handle"/>
+                        <field name="name" string="Textblock"/>
+                        <field name="page_break" optional="hidden"/>
+                        <field name="not_print" optional="hidden"/>
+                    </tree>
+                </field>
+            </xpath>
+
+            <!-- Post-Lines Text-blocks -->
+
+            <xpath expr="//field[@name='order_line']" position="after">
+                <separator string="Post-Lines Textblocks"/>
+                <field name="bottom_text_block_item"
+                       context="{'default_model': 'purchase.order', 'partner_id': partner_id}"
+                       widget="many2many_list">
+                    <tree>
+                        <field name="sequence" widget="handle"/>
+                        <field name="name" string="Textblock"/>
+                        <field name="page_break" optional="hidden"/>
+                        <field name="not_print" optional="hidden"/>
+                    </tree>
+                </field>
+            </xpath>
+
+
+            <!--Lines Tex-blocks -->
+
+            <!-- Form -->
+            <xpath expr="//field[@name='order_line']/form/group[1]/group[2]/field[@name='date_planned']"
+                   position="after">
+                <field name="partner_id" invisible="1"/>
+                <field name="model" invisible="1"/>
+                <field name="state" invisible="1"/>
+                <field name="is_textblock" invisible="1"/>
+                <field name="model_id" invisible="1"/>
+                <field name="text_block_item"
+                       domain="[('model','=','purchase.order.line')]"
+                       context="{'default_model': 'purchase.order.line', 'partner_id': partner_id}"
+                       attrs="{'invisible': [('is_textblock', '!=', True)]}"/>
+            </xpath>
+
+            <!-- Tree -->
+            <xpath expr="//field[@name='order_line']/tree/field[@name='date_planned']"
+                   position="after">
+                <field name="partner_id" invisible="1"/>
+                <field name="model" invisible="1"/>
+                <field name="state" invisible="1"/>
+                <field name="is_textblock" invisible="1"/>
+                <field name="model_id" invisible="1"/>
+                <field name="text_block_item"
+                       domain="[('model','=','purchase.order.line')]"
+                       context="{'default_model': 'purchase.order.line', 'partner_id': partner_id}"
+                       attrs="{'invisible': [('is_textblock', '!=', True)]}"
+                       optional="show"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

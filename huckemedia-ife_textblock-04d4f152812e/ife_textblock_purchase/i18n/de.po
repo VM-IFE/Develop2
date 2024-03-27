@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ife_textblock_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-14 18:06+0000\n"
+"PO-Revision-Date: 2021-10-14 18:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ife_textblock_purchase
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_purchase_order_line__t_body
+msgid "Contents"
+msgstr "Inhalte"
+
+#. module: ife_textblock_purchase
+#: model:ir.model,name:ife_textblock_purchase.model_text_block_item
+msgid "Item Textblock"
+msgstr ""
+
+#. module: ife_textblock_purchase
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_purchase_order__model
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_purchase_order__model_id
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_purchase_order_line__model
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_purchase_order_line__model_id
+msgid "Model"
+msgstr "Modell"
+
+#. module: ife_textblock_purchase
+#: model:ir.model,name:ife_textblock_purchase.model_purchase_order
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_text_block_item__purchase_order_id
+msgid "Purchase Order"
+msgstr "Beschaffungsauftrag"
+
+#. module: ife_textblock_purchase
+#: model:ir.model,name:ife_textblock_purchase.model_purchase_order_line
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_text_block__purchase_order_line_id
+#: model:ir.model.fields,field_description:ife_textblock_purchase.field_text_block_item__purchase_order_line_id
+msgid "Purchase Order Line"
+msgstr "Bestellposition"
+
+
+#. module: ife_textblock_purchase
+#: model:ir.model,name:ife_textblock_purchase.model_purchase_order
+msgid "Purchase"
+msgstr "Einkauf"
