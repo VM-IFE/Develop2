@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="sh_add_timesheet_wizard_view" model="ir.ui.view">
+        <field name="name">Add Timesheet Wizard</field>
+        <field name="model">sh.add.timesheet.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Add Timesheet Wizard">
+                <group>
+                    <group>
+                        <field name="sh_employee_id" />
+                        <field name="sh_project_id" required="1" options="{'no_create_edit': True}" context="{'form_view_ref': 'project.project_project_view_form_simplified',}" />
+                        <field name="sh_task_id" options="{'no_create_edit': True, 'no_open': True}" widget="task_with_hours" context="{'default_sh_project_id': sh_project_id}" domain="[('project_id', '=', sh_project_id)]" />
+                        <field name="sh_description" />
+                    </group>
+                    <group>
+                        <field name="sh_date" string="Date" />
+                        <field name="sh_start" />
+                        <field name="sh_stop" />
+                        <field name="duration" widget="float_time" />
+                    </group>
+                </group>
+
+                <footer>
+                    <button string="Create Timesheet" name="action_add_timesheet" type="object" class="btn-primary" />
+                    <b>or</b>
+                    <button string="Cancel" class="btn-primary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_add_timesheet_wizard_action" model="ir.actions.act_window">
+        <field name="name">Add Timesheet Wizard</field>
+        <field name="view_id" ref="sh_add_timesheet_wizard_view" />
+        <field name="view_mode">form</field>
+        <field name="res_model">sh.add.timesheet.wizard</field>
+        <field name="target">new</field>
+    </record>
+    
+</odoo>

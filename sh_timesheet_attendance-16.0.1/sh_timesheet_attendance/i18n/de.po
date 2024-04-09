@@ -1,0 +1,192 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_timesheet_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-24 13:51+0000\n"
+"PO-Revision-Date: 2021-07-24 13:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "<b>or</b>"
+msgstr "<b>oder</b>"
+
+#. module: sh_timesheet_attendance
+#: model:ir.actions.act_window,name:sh_timesheet_attendance.sh_add_timesheet_wizard_action
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "Add Timesheet Wizard"
+msgstr "Fügen Sie den Timesheet-Assistenten hinzu"
+
+#. module: sh_timesheet_attendance
+#: model:res.groups,name:sh_timesheet_attendance.group_sh_timesheet_attendance
+msgid "Allow to create Timesheet From Attendance"
+msgstr "Erstellen Sie die Arbeitszeittabelle von der Anwesenheit"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model,name:sh_timesheet_attendance.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Analytische Linie."
+
+#. module: sh_timesheet_attendance
+#: model:ir.model,name:sh_timesheet_attendance.model_hr_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line__sh_attendance_id
+msgid "Attendance"
+msgstr "Teilnahme"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "Cancel"
+msgstr "Stornieren"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_form_view
+msgid "Create Timesheet"
+msgstr "Timesheet erstellen"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "Date"
+msgstr "Datum"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_description
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__display_name
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__duration
+msgid "Duration"
+msgstr "Dauer"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_employee_id
+msgid "Employee"
+msgstr "Mitarbeiter"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance____last_update
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_open_timesheet_form_view
+msgid "Open Attendence"
+msgstr "Offene Anziehung"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_form_view
+msgid "Open Timesheet"
+msgstr "Öffnen Sie Timesheet"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__sh_project_id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_project_id
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_search_view
+msgid "Project"
+msgstr "Projekt"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model,name:sh_timesheet_attendance.model_sh_add_timesheet_wizard
+msgid "Sh Add Timesheet Wizard"
+msgstr "SH Fügen Sie den Timesheet-Assistenten hinzu"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_date
+msgid "Sh Date"
+msgstr "Sh date"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_start
+msgid "Start"
+msgstr "Start"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,help:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_start
+msgid "Start date of an event, without time for full days events"
+msgstr "Anfangsdatum eines Ereignisses, ohne Zeit für volle Tage Ereignisse"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_stop
+msgid "Stop"
+msgstr "Stoppen"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,help:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_stop
+msgid "Stop date of an event, without time for full days events"
+msgstr "Stop-Datum eines Ereignisses, ohne Zeit für volle Tagen Events"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__sh_task_id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_task_id
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_search_view
+msgid "Task"
+msgstr "Aufgabe"
+
+#. module: sh_timesheet_attendance
+#: code:addons/sh_timesheet_attendance/models/sh_timesheet_attendance.py:0
+#, python-format
+msgid "There is not any Attendance for this Timesheet !"
+msgstr "Es gibt keine Anwesenheit für diese Arbeitszeittabelle!"
+
+#. module: sh_timesheet_attendance
+#: code:addons/sh_timesheet_attendance/models/sh_timesheet_attendance.py:0
+#, python-format
+msgid "There is not any Timesheet for this Attendance !"
+msgstr "Es gibt keine Arbeitszeittabelle für diese Anwesenheit!"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__sh_timesheet_id
+msgid "Timesheet"
+msgstr "Arbeitszeittabelle"
+
+#. module: sh_timesheet_attendance
+#: code:addons/sh_timesheet_attendance/models/sh_timesheet_attendance.py:0
+#, python-format
+msgid "You are not allow to Create Timesheet without Check Out !"
+msgstr "Sie erlauben nicht, keine Arbeitszeittabelle ohne Check-out zu erstellen!"

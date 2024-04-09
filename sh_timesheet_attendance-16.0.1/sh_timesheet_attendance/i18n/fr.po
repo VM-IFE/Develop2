@@ -1,0 +1,192 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_timesheet_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-24 13:51+0000\n"
+"PO-Revision-Date: 2021-07-24 13:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "<b>or</b>"
+msgstr "<b>ou alors</b>"
+
+#. module: sh_timesheet_attendance
+#: model:ir.actions.act_window,name:sh_timesheet_attendance.sh_add_timesheet_wizard_action
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "Add Timesheet Wizard"
+msgstr "Ajouter un assistant de feuille de temps"
+
+#. module: sh_timesheet_attendance
+#: model:res.groups,name:sh_timesheet_attendance.group_sh_timesheet_attendance
+msgid "Allow to create Timesheet From Attendance"
+msgstr "Permettre de créer une feuille de temps de la participation"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model,name:sh_timesheet_attendance.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Ligne analytique"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model,name:sh_timesheet_attendance.model_hr_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line__sh_attendance_id
+msgid "Attendance"
+msgstr "Présence"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_form_view
+msgid "Create Timesheet"
+msgstr "Créer une feuille de temps"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__create_date
+msgid "Created on"
+msgstr "Créé sur"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_add_timesheet_wizard_view
+msgid "Date"
+msgstr "Date"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_description
+msgid "Description"
+msgstr "La description"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__display_name
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__display_name
+msgid "Display Name"
+msgstr "Afficher un nom"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__duration
+msgid "Duration"
+msgstr "Durée"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_employee_id
+msgid "Employee"
+msgstr "Employé"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__id
+msgid "ID"
+msgstr "identifiant"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance____last_update
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification sur"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_open_timesheet_form_view
+msgid "Open Attendence"
+msgstr "Assistance ouverte"
+
+#. module: sh_timesheet_attendance
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_form_view
+msgid "Open Timesheet"
+msgstr "Ouvrir la feuille de temps"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__sh_project_id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_project_id
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_search_view
+msgid "Project"
+msgstr "Projet"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model,name:sh_timesheet_attendance.model_sh_add_timesheet_wizard
+msgid "Sh Add Timesheet Wizard"
+msgstr "Sh Ajouter un assistant de la feuille de temps"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_date
+msgid "Sh Date"
+msgstr "SH date"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_start
+msgid "Start"
+msgstr "Début"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,help:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_start
+msgid "Start date of an event, without time for full days events"
+msgstr "Date de début d'un événement, sans temps pour les événements de la journée complète"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_stop
+msgid "Stop"
+msgstr "Arrêter"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,help:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_stop
+msgid "Stop date of an event, without time for full days events"
+msgstr "Arrêtez la date d'un événement, sans temps pour les événements d'une journée complète"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__sh_task_id
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_sh_add_timesheet_wizard__sh_task_id
+#: model_terms:ir.ui.view,arch_db:sh_timesheet_attendance.sh_timesheet_attendance_search_view
+msgid "Task"
+msgstr "Tâche"
+
+#. module: sh_timesheet_attendance
+#: code:addons/sh_timesheet_attendance/models/sh_timesheet_attendance.py:0
+#, python-format
+msgid "There is not any Attendance for this Timesheet !"
+msgstr "Il n'y a aucune assistance pour cette feuille de temps!"
+
+#. module: sh_timesheet_attendance
+#: code:addons/sh_timesheet_attendance/models/sh_timesheet_attendance.py:0
+#, python-format
+msgid "There is not any Timesheet for this Attendance !"
+msgstr "Il n'y a pas de feuille de temps pour cette présence!"
+
+#. module: sh_timesheet_attendance
+#: model:ir.model.fields,field_description:sh_timesheet_attendance.field_hr_attendance__sh_timesheet_id
+msgid "Timesheet"
+msgstr "Emploi du temps"
+
+#. module: sh_timesheet_attendance
+#: code:addons/sh_timesheet_attendance/models/sh_timesheet_attendance.py:0
+#, python-format
+msgid "You are not allow to Create Timesheet without Check Out !"
+msgstr "Vous n'êtes pas autorisé à créer une feuille de temps sans check out!"

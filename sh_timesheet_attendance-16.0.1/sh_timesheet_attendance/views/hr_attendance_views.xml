@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="sh_timesheet_attendance_form_view" model="ir.ui.view">
+        <field name="name">sh.timesheet.attendance.form.view</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <field name="sh_timesheet_id" invisible="1" />
+                    <field name="sh_project_id" invisible="1" />
+                    <field name="sh_task_id" invisible="1" />
+                    <button name="sh_create_timesheet" attrs="{'invisible': [('sh_timesheet_id', '!=', False)]}" string="Create Timesheet" type="object" class="btn-primary" groups="sh_timesheet_attendance.group_sh_timesheet_attendance" />
+                </header>
+            </xpath>
+            <xpath expr="//sheet/group" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button name="open_timesheet" string="Open Timesheet" attrs="{'invisible': [('sh_timesheet_id', '=', False)]}" type="object" class="oe_stat_button" icon="fa-pencil-square-o" groups="sh_timesheet_attendance.group_sh_timesheet_attendance" />
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="sh_timesheet_attendance_search_view" model="ir.ui.view">
+        <field name="name">sh.timesheet.attendance.search.view</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_filter" />
+        <field name="arch" type="xml">
+            <field name="employee_id" position="after">
+                <field name="sh_project_id" />
+                <field name="sh_task_id" />
+            </field>
+            <xpath expr="//group/filter[@name='employee']" position="after">
+                <filter string="Project" name="sh_project_id" context="{'group_by': 'sh_project_id'}" />
+                <filter string="Task" name="sh_task_id" context="{'group_by': 'sh_task_id'}" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
