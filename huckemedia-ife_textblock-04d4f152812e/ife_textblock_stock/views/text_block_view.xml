@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="text_block_stock_action" model="ir.actions.act_window">
+        <field name="name">Text Block Action</field>
+        <field name="res_model">text.block</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">['|',('model','=','stock.picking'), ('model','=','stock.move')]</field>
+        <field name="context">{'textblock_model': 'stock.picking'}</field>
+    </record>
+    
+    <menuitem name="Text Block" action="text_block_stock_action"
+              id="text_block_stock_menu" parent="stock.menu_stock_config_settings" sequence="99"/>
+
+</odoo>

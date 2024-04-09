@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="text_block_purchase_action" model="ir.actions.act_window">
+        <field name="name">Text Block Action</field>
+        <field name="res_model">text.block</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">['|',('model','=','purchase.order'), ('model','=','purchase.order.line')]</field>
+        <field name="context">{'textblock_model': 'purchase.order'}</field>
+    </record>
+
+    <menuitem name="Text Block" action="text_block_purchase_action"
+              id="text_block_purchase_menu" parent="purchase.menu_purchase_config" sequence="99"/>
+
+</odoo>

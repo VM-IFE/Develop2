@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="repair_order_view_ext" model="ir.ui.view">
+        <field name="name">repair.order.form.ext</field>
+        <field name="model">repair.order</field>
+        <field name="inherit_id" ref="repair.view_repair_order_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Pre-Lines Text-blocks -->
+            <xpath expr="//field[@name='operations']" position="before">
+                <separator string="Pre-Lines Textblocks"/>
+                <field name="model_id" invisible="1"/>
+                <field name="above_text_block_item"
+                       context="{'default_model': 'repair.order', 'partner_id': partner_id}"
+                       widget="many2many_list">
+                    <tree>
+                        <field name="sequence" widget="handle"/>
+                        <field name="name" string="Textblock"/>
+                    </tree>
+                </field>
+            </xpath>
+
+
+            <!-- Post-Lines Text-blocks -->
+            <xpath expr="//field[@name='operations']" position="after">
+                <separator string="Post-Lines Textblocks"/>
+                <field name="bottom_text_block_item"
+                       context="{'default_model': 'repair.order', 'partner_id': partner_id}"
+                       widget="many2many_list">
+                    <tree>
+                        <field name="sequence" widget="handle"/>
+                        <field name="name" string="Textblock"/>
+                    </tree>
+                </field>
+            </xpath>
+        </field>
+    </record>
+</odoo>

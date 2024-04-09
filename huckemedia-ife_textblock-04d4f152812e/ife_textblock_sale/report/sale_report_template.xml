@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_document" inherit_id="sale.report_saleorder_document" priority="15">
+
+        <!-- Pre-Lines Text-blocks -->
+
+        <xpath expr="//table[@class='table table-sm o_main_table table-borderless mt-4']" position="before">
+            <t t-foreach="doc.above_text_block_item.filtered(lambda p: not p.not_print).sorted(lambda x: x.sequence)" t-as="t">
+                <t t-if="t.page_break">
+                    <p>
+                        <t t-set="block_text" t-value="t.with_context({'lang':doc.partner_id.lang}).text"/>
+                        <t t-raw="doc.convert_to_html(block_text,doc)"/>
+                    </p>
+                    <p style="page-break-after: always;"/>
+                </t>
+                <t t-if="not t.page_break">
+                    <p>
+                        <t t-set="block_text" t-value="t.with_context({'lang':doc.partner_id.lang}).text"/>
+                        <t t-raw="doc.convert_to_html(block_text,doc)"/>
+                    </p>
+                </t>
+            </t>
+        </xpath>
+
+        <!-- Post-Lines Text-blocks -->
+
+        <xpath expr="//p[@id='fiscal_position_remark']" position="after">
+            <t t-foreach="doc.bottom_text_block_item.filtered(lambda p: not p.not_print).sorted(lambda x: x.sequence)" t-as="t">
+                <t t-if="t.page_break">
+                    <p style="page-break-before: always;"/>
+                    <p>
+                        <t t-set="block_text" t-value="t.with_context({'lang':doc.partner_id.lang}).text"/>
+                        <t t-raw="doc.convert_to_html(block_text,doc)"/>
+                    </p>
+                </t>
+                <t t-if="not t.page_break">
+                    <p>
+                        <t t-set="block_text" t-value="t.with_context({'lang':doc.partner_id.lang}).text"/>
+                        <t t-raw="doc.convert_to_html(block_text,doc)"/>
+                    </p>
+                </t>
+            </t>
+        </xpath>
+
+        <!-- Lines Text-blocks-->
+
+        <xpath expr="//t[@t-foreach='lines_to_report']/tr[1]/t[1]" position="attributes">
+            <attribute name="t-if">not line.display_type</attribute>
+        </xpath>
+
+        <xpath expr="//t[@t-foreach='lines_to_report']/tr[1]/t[1]" position="inside">
+            <tr t-if="not line.display_type">
+                <td colspan="99">
+                    <span style="" t-field="line.text_block_item.text"/>
+                </td>
+            </tr>
+        </xpath>
+    </template>
+
+</odoo>
+

@@ -1,0 +1,150 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ife_textblock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-14 17:45+0000\n"
+"PO-Revision-Date: 2021-10-14 17:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ife_textblock
+#: model:ir.model,name:ife_textblock.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__create_uid
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__create_date
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__display_name
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_res_config_settings__module_ife_textblock_invoice
+msgid "Invoice Textblock"
+msgstr "Rechnung Textblock"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block____last_update
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item____last_update
+msgid "Last Modified on"
+msgstr "Letzte Änderung am"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__write_uid
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__write_date
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__model
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__model_id
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__model
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__model_id
+msgid "Model"
+msgstr "Modell"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__not_print
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__not_print
+msgid "Not on Reports"
+msgstr "Nicht auf Dokumente"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__page_break
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__page_break
+msgid "Page Break"
+msgstr "Seitenvorschub"
+
+#. module: ife_textblock
+#: model:ir.model,name:ife_textblock.model_product_template
+msgid "Product Template"
+msgstr "Produktvorlage"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_res_config_settings__module_ife_textblock_purchase
+msgid "Purchase Textblock"
+msgstr "Einkauf Textblock"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_res_config_settings__module_ife_textblock_repair
+msgid "Repair Textblock"
+msgstr "Reparatur Textblock"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_res_config_settings__module_ife_textblock_sale
+msgid "Sale Textblock"
+msgstr "Verkauf Textblock"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block__sequence
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__sequence
+msgid "Sequence"
+msgstr "Sequenz"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_res_config_settings__module_ife_textblock_stock
+msgid "Stock Textblock"
+msgstr "Lager Textblock"
+
+#. module: ife_textblock
+#: model:ir.model.fields,field_description:ife_textblock.field_text_block_item__template_textblock
+msgid "Template"
+msgstr "Vorlage"
+
+#. module: ife_textblock
+#: model:product.product,uom_name:ife_textblock.product_text_block
+#: model:product.template,uom_name:ife_textblock.product_text_block_product_template
+msgid "Units"
+msgstr "Einheiten"
+
+#. module: ife_textblock
+#: model_terms:ir.ui.view,arch_db:ife_textblock.view_general_settings
+msgid "Use Textblock for Invoice"
+msgstr "Verwenden Sie Textblock für Rechnung"
+
+#. module: ife_textblock
+#: model_terms:ir.ui.view,arch_db:ife_textblock.view_general_settings
+msgid "Use Textblock for Purchase"
+msgstr "Verwenden Sie Textblock für Einkauf"
+
+#. module: ife_textblock
+#: model_terms:ir.ui.view,arch_db:ife_textblock.view_general_settings
+msgid "Use Textblock for Repair"
+msgstr "Verwenden Sie Textblock für Reparatur"
+
+#. module: ife_textblock
+#: model_terms:ir.ui.view,arch_db:ife_textblock.view_general_settings
+msgid "Use Textblock for Sale"
+msgstr "Verwenden Sie Textblock für Verkauf"
+
+#. module: ife_textblock
+#: model_terms:ir.ui.view,arch_db:ife_textblock.view_general_settings
+msgid "Use Textblock for Stock"
+msgstr "Verwenden Sie Textblock für Lager"
+"

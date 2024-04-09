@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="text_block_form_view" model="ir.ui.view">
+        <field name="name">text.block.form.view</field>
+        <field name="model">text.block</field>
+        <field name="arch" type="xml">
+            <form class="oe_form_li">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="page_break"/>
+                            <field name="not_print"/>
+                        </group>
+                        <group>
+                            <field name="model_id" widget="many2many_tags" options="{'color_field': 'color'}"
+                            domain="[('model', 'in', ['sale.order', 'purchase.order', 'account.move', 'repair.order', 'stock.picking'])]"/>
+                            <field name="model" invisible="1"/>
+                            <field name="company_ids" widget="many2many_tags"/>
+                            <field name="company_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <separator string="Text Block"/>
+                    <field name="text" no_label="True" widget="html" class="oe_form_field_li" options="{'style-inline': true, 'codeview': true }"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="text_block_tree_view" model="ir.ui.view">
+        <field name="name">text.block.tree.view</field>
+        <field name="model">text.block</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="model_id" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                <field name="company_ids" widget="many2many_tags"/>
+                <field name="text" widget="html" invisible="1"/>
+                <field name="not_print" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="text_block_item_form_view" model="ir.ui.view">
+        <field name="name">text.block.item.form.view</field>
+        <field name="model">text.block.item</field>
+        <field name="arch" type="xml">
+            <form class="oe_form_li">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="page_break"/>
+                            <field name="not_print"/>
+                        </group>
+                        <group>
+                            <field name="model_id" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                            <field name="company_ids" widget="many2many_tags"/>
+                            <field name="template_textblock" domain="['|',('company_ids', '=',company_id),('company_ids', '=',False),('model','=',model)]"/>
+                            <field name="model" invisible="1"/>
+                            <field name="company_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <separator string="Text Block"/>
+                    <field name="text" no_label="True" widget="html" class="oe_form_field_li"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="text_block_item_tree_view" model="ir.ui.view">
+        <field name="name">text.block.item.tree.view</field>
+        <field name="model">text.block.item</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="model_id" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                <field name="template_textblock"/>
+                <field name="text" widget="html" invisible="1"/>
+                <field name="page_break" optional="hidden"/>
+                <field name="not_print" optional="show"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
