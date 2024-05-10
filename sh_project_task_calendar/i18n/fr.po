@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_project_task_calendar
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-20 12:11+0000\n"
+"PO-Revision-Date: 2020-10-20 12:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_project_task_calendar
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_task__calendar_id
+msgid "Calendar"
+msgstr "Calendrier"
+
+#. module: sh_project_task_calendar
+#: model:ir.model,name:sh_project_task_calendar.model_calendar_event
+msgid "Calendar Event"
+msgstr "Événement de calendrier"
+
+#. module: sh_project_task_calendar
+#: model:ir.actions.act_window,name:sh_project_task_calendar.sh_action_calendar_to_task_event
+msgid "Calendar_to_Task"
+msgstr "Calendar_to_task"
+
+#. module: sh_project_task_calendar
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_task_create_meeting_form_view_inherit
+msgid "Create Meeting"
+msgstr "Créer une réunion"
+
+#. module: sh_project_task_calendar
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_task_calendar_form_view_inherit
+msgid "Create Task"
+msgstr "Créer une tâche"
+
+#. module: sh_project_task_calendar
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_calendar_event__display_name
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_project__display_name
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_task__display_name
+msgid "Display Name"
+msgstr "Afficher un nom"
+
+#. module: sh_project_task_calendar
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_calendar_event__id
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_project__id
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_task__id
+msgid "ID"
+msgstr "identifiant"
+
+#. module: sh_project_task_calendar
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_calendar_event____last_update
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_project____last_update
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_task____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification sur"
+
+#. module: sh_project_task_calendar
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_project_create_meeting_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_task_create_meeting_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_task_create_meeting_search_view_inherit
+msgid "Meetings"
+msgstr "Réunions"
+
+#. module: sh_project_task_calendar
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_project__meetings_count
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_project_task__meetings_count
+msgid "Meetings Count"
+msgstr "Les réunions comptent"
+
+#. module: sh_project_task_calendar
+#: model:ir.model,name:sh_project_task_calendar.model_project_project
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_calendar_event__project_id
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_task_calendar_search_view_inherit
+msgid "Project"
+msgstr "Projet"
+
+#. module: sh_project_task_calendar
+#: model:ir.actions.act_window,name:sh_project_task_calendar.sh_action_project_to_calendar_event
+msgid "Project_to_Calendar"
+msgstr "Projet_to_calendar"
+
+#. module: sh_project_task_calendar
+#: model:ir.model,name:sh_project_task_calendar.model_project_task
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_calendar_event__task_id
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_task_calendar_search_view_inherit
+msgid "Task"
+msgstr "Tâche"
+
+#. module: sh_project_task_calendar
+#: model:ir.model.fields,field_description:sh_project_task_calendar.field_calendar_event__task_count
+msgid "Task Count"
+msgstr "Nombre de tâches"
+
+#. module: sh_project_task_calendar
+#: model:ir.actions.act_window,name:sh_project_task_calendar.sh_action_task_to_calendar_event
+msgid "Task_to_Calendar"
+msgstr "Task_To_Calendar"
+
+#. module: sh_project_task_calendar
+#: model_terms:ir.ui.view,arch_db:sh_project_task_calendar.sh_project_task_calendar_form_view_inherit
+msgid "Tasks"
+msgstr "Tâches"
